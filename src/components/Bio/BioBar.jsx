@@ -1,6 +1,8 @@
 import { Box, Grid, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import Neurons from "./Neurons";
+import NeuronsImg from "../../assets/imgs/Groupe de masques 6@2x.png";
+import { FaPlay } from "react-icons/fa";
 import PPlogo from "./P2P";
 import {
   StartButton,
@@ -11,14 +13,23 @@ import {
   RightTitle,
   RightContentContainer,
   RightSubTitle,
+  PlayButton,
+  BoxBackg,
 } from "./style";
+import Video from "./VideoPopup/Video";
 
 const BioBar = () => {
+  const [youtube, setYoutube] = useState(false);
   return (
-    <Box sx={{ flexGrow: 1, height: "340px" }}>
-      <Grid container sx={{ position: "relative", height: "100%" }}>
+    <Box sx={{ flexGrow: 1 }}>
+      <Grid container sx={{ position: "relative", overflow: "hidden" }}>
         <Box sx={NeuronsStyle}>
-          <Neurons />
+          <img
+            src={NeuronsImg}
+            width="100%"
+            style={{ marginBottom: "24px" }}
+            alt=""
+          />
         </Box>
         <Grid
           item
@@ -50,7 +61,14 @@ const BioBar = () => {
               make transactions easier. That’s why our l mobile app allows you
               more flexibility in your daily life!
             </Typography>
-            <StartButton>Start Now</StartButton>
+            <PlayButton
+              onClick={() => {
+                setYoutube(true);
+              }}
+            >
+              <FaPlay fontSize="inherit" />
+            </PlayButton>
+            {youtube && <Video setYoutube={setYoutube} />}
           </Box>
         </Grid>
       </Grid>

@@ -2,6 +2,7 @@ import { Button, styled } from "@mui/material";
 
 export const ContainerStyle = {
   position: "relative",
+  py: 6,
   flexGrow: 1,
   display: "flex",
   justifyContent: "center",

@@ -8,4 +8,5 @@
 }
 html {
   font-family: "NotoSans";
+  scroll-behavior: smooth;
 }

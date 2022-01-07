@@ -18,6 +18,12 @@ import { LgLogoStyle, LinkStyle, LgMenuItems } from "../Navigation/style";
 import Logo from "../../assets/imgs/cash-logo.png";
 import Wallmart from "../WalletMarket/Wallmart";
 import BioBar from "../Bio/BioBar";
+import Offers from "../Offers/Offers";
+import Roadmap from "../Roadmap/Roadmap";
+import About from "../About/About";
+import Terms from "../Terms/Terms";
+import Outro from "../Outro/Outro";
+import Footer from "../Footer/Footer";
 
 const NavHeight = "70px";
 const Navigation = () => {
@@ -38,19 +44,24 @@ const Navigation = () => {
         position="fixed"
         sx={{
           height: NavHeight,
-          bgcolor: "gray.main",
+          bgcolor: "rgba(248, 248, 248,0.8)",
+
           boxShadow: "0px 4px 12px rgba(0,0,0,0.1)",
         }}
       >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Box sx={LgLogoStyle}>
-              <img src={Logo} alt="" style={{ maxWidth: "120px" }} />
+              <Link href="/">
+                <img src={Logo} alt="" style={{ maxWidth: "120px" }} />
+              </Link>
             </Box>
             <Box sx={LgMenuItems}>
               {pages.map((page) => (
                 <Button key={page} onClick={handleCloseNavMenu}>
-                  <Link sx={LinkStyle}>{page}</Link>
+                  <Link sx={LinkStyle} href={`#${page}`}>
+                    {page}
+                  </Link>
                 </Button>
               ))}
             </Box>
@@ -113,7 +124,13 @@ const Navigation = () => {
       >
         <Hero navH={NavHeight} />
         <Wallmart />
-       <BioBar />
+        <BioBar />
+        <Offers />
+        <Roadmap />
+        <About />
+        <Terms />
+        <Outro />
+        <Footer />
       </Box>
     </Box>
   );
