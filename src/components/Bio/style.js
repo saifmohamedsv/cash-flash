@@ -63,7 +63,6 @@ export const StartButton = styled(Button)({
 export const RightContentContainer = {
   height: "100%",
   display: "flex",
-
   flexDirection: "column",
   alignItems: "flex-start",
   padding: { xs: "12px", lg: "12px 48px" },
