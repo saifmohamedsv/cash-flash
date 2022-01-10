@@ -7,8 +7,11 @@ import PersonIcon from '@mui/icons-material/Person';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import ShareIcon from '@mui/icons-material/Share';
 import {NavButton, UserName} from "./style";
+import {} from 'react-icons/'
 import Wallet from "./Wallet/Wallet";
 import Send from "./Wallet/Send/Send";
+import Receive from "./Wallet/Receive/Receive";
+import Profile from "./Profile/Profile";
 
 const drawerWidth = 300;
 
@@ -62,6 +65,7 @@ const Marketplace = () => {
                     size="large"
                     key={index}
                     startIcon={item.icon}
+                    endIcon={}
                     onClick={() => {
                         router(`/Marketplace/${item.text.toLowerCase()}`);
                     }}
@@ -79,7 +83,8 @@ const Marketplace = () => {
             <Routes>
                 <Route path="wallet" element={<Wallet/>}/>
                 <Route path="wallet/send" element={<Send/>}/>
-                <Route path="wallet/receive" element={<h1>Reviece page</h1>}/>
+                <Route path="wallet/receive" element={<Receive/>}/>
+                <Route path="profile" element={<Profile />}/>
             </Routes>
         </Box>
     </Box>)
