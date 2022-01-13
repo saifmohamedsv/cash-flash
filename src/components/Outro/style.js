@@ -41,6 +41,7 @@ export const AddressTitle = {
 export const LinkStyle = {
     fontSize: "16px",
     color: "#212121",
+    cursor: "pointer",
     fontFamily: "NotoSans",
     fontWeight: "600",
 };

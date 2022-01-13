@@ -30,7 +30,7 @@ const Market = () => {
         container
         xs={12}
         lg={6}
-        sx={{ p: { xs: 3, lg: 6 } }}
+        sx={{py: {xs: 3, lg: 6}, px: {xs: 3, lg: 16}}}
         alignItems="start"
         justifyContent="center"
         direction="column"

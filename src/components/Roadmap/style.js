@@ -10,7 +10,6 @@ export const ContainerStyle = {
   py: 4,
   background: `transparent url(${BACKG}) 0% 0% no-repeat padding-box`,
   backgroundColor: "rgba(0,0,0,0.7)",
-
   backgroundSize: "cover",
 };
 

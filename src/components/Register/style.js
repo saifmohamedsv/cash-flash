@@ -81,6 +81,7 @@ export const SignInButton = styled(Button)({
     borderRadius: "1000px",
     color: "#212121",
     fontFamily: "NotoSans",
+    textTransform:"capitalize",
     fontWeight: "600",
     padding: "12px 48px",
     width: "100%",

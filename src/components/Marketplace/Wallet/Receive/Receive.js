@@ -3,6 +3,7 @@ import {Box, Button, Container, Grid, Typography} from "@mui/material";
 import QRCode from 'qrcode.react';
 import CFT from '../../../../assets/imgs/ethereum.png'
 import USDT from '../../../../assets/imgs/tether.png'
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import {InputField} from "./style";
 
 const Receive = () => {
@@ -29,7 +30,7 @@ const Receive = () => {
                             <InputField value={"1907dasd019273hzdgasd"} label={"ID"}/>
                         </Grid>
                         <Grid item>
-                            <Button variant={"contained"} sx={{bgcolor: "#212121", color: "#fff"}}>Copy</Button>
+                            <Button variant={"contained"} sx={{bgcolor: "#212121", color: "#fff"}} startIcon={<ContentCopyIcon />}>Copy</Button>
                         </Grid>
                     </Grid>
                 </Grid>
@@ -54,7 +55,7 @@ const Receive = () => {
                             <InputField value={"1907dasd019273hzdgasd"} label={"ID"}/>
                         </Grid>
                         <Grid item>
-                            <Button variant={"contained"} sx={{bgcolor: "#212121", color: "#fff"}}>Copy</Button>
+                            <Button variant={"contained"} sx={{bgcolor: "#212121", color: "#fff"}} startIcon={<ContentCopyIcon />}>Copy</Button>
                         </Grid>
                     </Grid>
                 </Grid>
@@ -79,7 +80,7 @@ const Receive = () => {
                             <InputField value={"1907dasd019273hzdgasd"} label={"ID"}/>
                         </Grid>
                         <Grid item>
-                            <Button variant={"contained"} sx={{bgcolor: "#212121", color: "#fff"}}>Copy</Button>
+                            <Button variant={"contained"} sx={{bgcolor: "#212121", color: "#fff"}} startIcon={<ContentCopyIcon />}>Copy</Button>
                         </Grid>
                     </Grid>
                 </Grid>

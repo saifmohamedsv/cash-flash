@@ -13,6 +13,7 @@ export const WalletButton = styled(Button)({
   fontFamily: "NotoSans",
   fontWeight: "600",
   padding: "12px 24px",
+  textTransform: "capitalize",
   fontSize: "16px",
   marginTop: "24px",
   "&:hover": {

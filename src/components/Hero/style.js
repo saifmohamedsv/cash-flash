@@ -34,6 +34,7 @@ export const BannerButton = styled(Button)({
   fontFamily: "NotoSans",
   fontWeight: "600",
   padding: "12px 24px",
+  textTransform: "capitalize",
   fontSize: "16px",
   "&:hover": {
     backgroundColor: "#212121",

@@ -1,4 +1,4 @@
-import Image from '../../assets/imgs/Account-right.jpg'
+import Image from '../../assets/imgs/signin-image.png'
 import {Button, styled, TextField} from "@mui/material";
 import BACKG
     from '../../assets/imgs/loginBackg.png'
@@ -81,6 +81,7 @@ export const SignInButton = styled(Button)({
     borderRadius: "1000px",
     color: "#212121",
     fontFamily: "NotoSans",
+    textTransform:"capitalize",
     fontWeight: "600",
     padding: "12px 48px",
     fontSize: "16px",

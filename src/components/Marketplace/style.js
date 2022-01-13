@@ -11,6 +11,14 @@ export const NavButton = styled(Button)({
     fontFamily: "MuliBold",
     textTransform: "capitalize",
     fontSize: "1rem",
+    ".MuiButton-endIcon": {
+        flexGrow: 1,
+        textAlign: "end",
+        display:"flex",
+        alignItems:"cener",
+        justifyContent:"end",
+        margin: "0",
+    },
     "&:hover": {
         backgroundColor: "#fee934",
         color: "#212121",

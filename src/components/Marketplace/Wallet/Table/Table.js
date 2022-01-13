@@ -67,9 +67,9 @@ export default function BasicTable() {
         setPage(0);
     };
 
-    return (<Paper sx={{width: '100%'}} elevation={0}>
+    return (<Paper sx={{width: '100%', px: 4}} elevation={0}>
         <Stack direction={"row"} alignItems={"center"}>
-            <Typography variant={"h5"} component={"div"} sx={{flexGrow: 1,fontFamily:"MuliBold"}}>
+            <Typography variant={"h1"} component={"div"} sx={{flexGrow: 1, fontFamily: "MuliBold", fontSize: "24px"}}>
                 History
             </Typography>
             <TablePagination

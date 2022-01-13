@@ -45,6 +45,7 @@ export const StartButton = styled(Button)({
   color: "#212121",
   fontFamily: "NotoSans",
   fontWeight: "600",
+  textTransform: "capitalize",
   padding: "12px 24px",
   fontSize: "16px",
   marginTop: "32px",

@@ -13,7 +13,7 @@ import {
     Toolbar,
     Typography
 } from "@mui/material";
-import {LgLogoStyle, LgMenuItems, LinkStyle} from "../Navigation/style";
+import {LgLogoStyle, LgMenuItems, LinkButtons, LinkStyle} from "../Navigation/style";
 import Logo from "../../assets/imgs/cash-logo.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import Hero from "../Hero/Hero";
@@ -67,6 +67,13 @@ const Homepage = () => {
                                     </Link>
                                 </Button>
                             ))}
+                            <Button key={"Login"} onClick={handleCloseNavMenu} sx={LinkButtons} onClick={() => {
+                                router('/account')
+                            }}>
+                                <Link sx={LinkStyle}>
+                                    Sign In
+                                </Link>
+                            </Button>
                         </Box>
                         <Box
                             sx={{
@@ -111,6 +118,9 @@ const Homepage = () => {
                                         <Typography textAlign="center">{page}</Typography>
                                     </MenuItem>
                                 ))}
+                                <MenuItem key={"login"} onClick={handleCloseNavMenu}>
+                                    <Typography textAlign="center">Sign In</Typography>
+                                </MenuItem>
                             </Menu>
                         </Box>
                     </Toolbar>

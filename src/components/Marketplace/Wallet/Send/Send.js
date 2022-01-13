@@ -21,8 +21,8 @@ const Send = () => {
                     <Stack direction={{xs: "column", lg: "row"}} spacing={2} alignItems={"center"}
                            justifyContent={"center"}
                            sx={{flexGrow: 1, mt: 4}}>
-                        <SendButton>SEND</SendButton>
-                        <CancelButton>CANCEL</CancelButton>
+                        <SendButton>send</SendButton>
+                        <CancelButton>cancel</CancelButton>
                     </Stack>
                 </Grid>
             </Container>
@@ -40,6 +40,7 @@ const SendButton = styled(Button)({
     color: "#212121",
     fontFamily: "NotoSans",
     fontWeight: "600",
+    textTransform: "capitalize",
     padding: "12px 24px",
     fontSize: "16px",
     width: "100%",
@@ -61,6 +62,7 @@ const CancelButton = styled(Button)({
     borderRadius: "1000px",
     color: "#fff",
     fontFamily: "NotoSans",
+    textTransform: "capitalize",
     fontWeight: "600",
     padding: "12px 24px",
     fontSize: "16px",

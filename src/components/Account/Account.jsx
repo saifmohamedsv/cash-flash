@@ -54,7 +54,9 @@ const Account = () => {
                                                 <Checkbox defaultChecked sx={{
                                                     color: "#fee934", '&.Mui-checked': {color: "#fee934"}
                                                 }}/>Keep me signed in</Typography>
-                                            <SignInButton>Sign in</SignInButton>
+                                            <SignInButton onClick={() => {
+                                                router('/marketplace/wallet')
+                                            }}>Sign in</SignInButton>
                                         </Stack>
                                     </Form>)}
                                 </Formik>

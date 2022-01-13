@@ -42,6 +42,7 @@ export const DownloadButton = styled(Button)({
     fontFamily: "NotoSans",
     fontWeight: "600",
     padding: "12px 32px",
+    textTransform: "capitalize",
     fontSize: "16px",
     marginTop: "32px",
     "&:hover": {

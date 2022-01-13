@@ -15,3 +15,7 @@ export const LinkStyle = {
   fontWeight: "700",
   textTransform: "capitalize",
 };
+export const LinkButtons = {
+  bgcolor:"#fee934",
+  p:0,
+}

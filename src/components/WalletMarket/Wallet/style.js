@@ -11,6 +11,7 @@ export const WalletButton = styled(Button)({
   borderRadius: "1000px",
   color: "#Fee934",
   fontFamily: "NotoSans",
+  textTransform: "capitalize",
   fontWeight: "600",
   padding: "12px 24px",
   fontSize: "16px",

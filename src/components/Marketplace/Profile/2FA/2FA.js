@@ -66,6 +66,7 @@ const EnableButton = styled(Button)({
     fontFamily: "NotoSans",
     fontWeight: "600",
     padding: "12px 24px",
+    textTransform: "capitalize",
     fontSize: "16px",
     width: "100%",
     "&:hover": {
